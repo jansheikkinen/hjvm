@@ -1,0 +1,12 @@
+[
+    {
+        "command": "cc -c -Wall -Wextra -pedantic -g -Iinclude -o src/main.o src/main.c",
+        "directory": "/home/heikkinen/projects/hjvm",
+        "file": "/home/heikkinen/projects/hjvm/src/main.c"
+    },
+    {
+        "command": "cc -c -Wall -Wextra -pedantic -g -Iinclude -o src/value/value.o src/value/value.c",
+        "directory": "/home/heikkinen/projects/hjvm",
+        "file": "/home/heikkinen/projects/hjvm/src/value/value.c"
+    }
+]
