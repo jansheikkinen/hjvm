@@ -6,10 +6,10 @@ SRC = $(wildcard src/*.c) $(wildcard src/**/*.c)
 OBJ = $(SRC:.c=.o)
 BUILD = build
 
+all: clear dirs clean run
+
 intercept: clean
 	intercept-build --append make build
-
-all: clear dirs clean run
 
 dirs:
 	mkdir -p $(BUILD) src tests
