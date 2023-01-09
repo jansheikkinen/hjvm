@@ -4,22 +4,22 @@
 #include "../value/value.h"
 
 enum Instructions {
-  INST_PANIC,
+  INST_PANIC, // panic()
 
-  INST_LOAD,
-  INST_COPY,
+  INST_LOAD, // R(A) = C(B)
+  INST_COPY, // R(A) = R(B)
 
-  INST_ADD,
-  INST_SUB,
-  INST_MUL,
-  INST_DIV,
-  INST_MOD,
+  INST_ADD, // R(A) = R(B) + R(C)
+  INST_SUB, // R(A) = R(B) - R(C)
+  INST_MUL, // R(A) = R(B) * R(C)
+  INST_DIV, // R(A) = R(B) / R(C)
+  INST_MOD, // R(A) = R(B) % R(C)
 
-  INST_CALL,
-  INST_RET,
+  INST_CALL, // R(A) = function, C(B) = num_args, C(C) = num_rets
+  INST_RET, // return R(A)
 
-  INST_JMP,
-  INST_JNL,
+  INST_JMP, // PC = C(A)
+  INST_JNL, // if(R(B) < R(C)) PC = C(A) else PC += 1
 };
 
 extern const char* INST_STR[];
